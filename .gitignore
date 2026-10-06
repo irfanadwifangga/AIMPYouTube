@@ -1,0 +1,43 @@
+## Build & Binary outputs
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+[Dd]ist/
+[Ll]og/
+[Ll]ogs/
+.vs/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.userprefs
+
+## NuGet
+*.nupkg
+*.snupkg
+*.nuget.props
+*.nuget.targets
+packages/
+project.lock.json
+project.assets.json
+
+## Runtime / Generated data
+*.log
+*.tmp
+yt-dlp.exe
+youtube-dl.exe
+Cache.json
+Settings.json
+Config.json
+scratch/
+
+## OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini

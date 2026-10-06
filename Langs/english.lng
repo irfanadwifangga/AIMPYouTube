@@ -1,0 +1,91 @@
+[FILE]
+Author=Eddy & Antigravity
+Name=English (EN)
+VersionID=0
+LangId=1033
+
+[YouTube]
+ConnectStatusOK=Authorization granted|You may now close this browser window and return to AIMP.
+ConnectStatusError=Sorry, an error occurred|Couldn't connect to YouTube account. Please return to AIMP and try again.
+YouTubeLang=en
+
+[YouTube.Messages]
+Error=Error
+CantResolve=Could not resolve this YouTube URL.
+EmptyUrl=Please enter a valid YouTube URL.
+NoPlaylist=Could not access or create AIMP playlist.
+ResolveError=An error occurred while resolving URL. Please check your internet connection or API key.
+NoUserPlaylists=No playlists found on this account.
+
+[YouTube.Menu]
+AddURL=YouTube URL...
+OpenInBrowser=YouTube: Open in Browser
+AddToExclusions=YouTube: Add to Exclusions
+AddTo=Add to
+RemoveFrom=Remove from
+CheckForNewItems=Check for New Videos
+
+[YouTube.AddURL]
+Title=Add YouTube URL
+URL=YouTube URL (Video, Playlist, Channel, or @handle):
+CreateNew=Create new playlist for this item
+OK=Add to AIMP
+Cancel=Cancel
+PlaylistName=Playlist Name (Optional):
+MyPlaylists=My Playlists...
+StatusResolving=Resolving YouTube metadata...
+StatusFetchingPlaylist=Fetching playlist tracks...
+StatusFetchingChannel=Fetching channel uploads...
+StatusFetchingVideo=Fetching video details...
+StatusFetchingMyPlaylists=Loading your account playlists...
+StatusSuccess=Successfully added {0} tracks!
+StatusSingleSuccess=Added video to playlist!
+
+[YouTube.Options]
+Title=YouTube Support
+AccountTitle=Google / YouTube Account
+StatusNotConnected=Status: Not Connected
+StatusWaitingAuth=Waiting for browser authentication...
+StatusAuthError=Failed to start browser authentication.
+ConnectGoogle=Connect Google Account...
+Disconnect=Disconnect
+AdvancedApi=Advanced API Settings (Client ID / API Key)...
+BrowserCookies=Import YouTube Cookies from Browser:
+ApiConfig=YouTube API Configuration
+ApiKeyPrompt=Custom YouTube API Key (Optional - leave empty for default):
+YtDlpTitle=yt-dlp Stream Extractor & Cookies
+YtDlpPath=yt-dlp.exe Path:
+Browse=Browse...
+AudioParams=Audio Format Arguments (-f):
+DownloadYtDlp=Download yt-dlp
+UpdateYtDlp=Update (-U)
+StatusReady=yt-dlp is installed and ready.
+StatusMissing=yt-dlp.exe is missing.
+StatusDownloading=Downloading yt-dlp.exe...
+StatusDownloadOk=yt-dlp downloaded successfully!
+StatusDownloadFail=Failed to download yt-dlp.
+StatusUpdating=Updating yt-dlp.exe...
+StatusUpdateDone=Update check complete.
+StatusUpdateFail=Update failed.
+General=General Options
+CheckAtStartup=Check monitored URLs on AIMP startup
+CreateNewByDefault=Create new playlist by default when adding items
+MonitorURLs=Monitor added URLs
+MonitorUserPlaylists=Monitor user's playlists
+CheckEvery=Check for new tracks every|hours
+YoutubeDLTimeout=Timeout|seconds
+Save=Save
+
+[YouTube.Playlists]
+Favorites=Favorites
+Uploads=Uploads
+Likes=Likes
+WatchLater=Watch later
+
+[YouTube.Exclusions]
+Title=Track Exclusions
+Header=Manage track exclusions
+ListHeader=Track title|Duration
+Remove=Remove from exclusions
+RemoveAndAddToPlaylist=Remove from exclusions and add to playlist
+OK=Close

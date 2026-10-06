@@ -1,0 +1,91 @@
+[FILE]
+Author=Lieba Natur Brilian & Antigravity
+Name=Indonesian (ID)
+VersionID=0
+LangId=1057
+
+[YouTube]
+ConnectStatusOK=Otorisasi diizinkan|Anda bisa menutup jendela peramban ini dan kembali ke AIMP
+ConnectStatusError=Maaf, terjadi masalah|Tidak dapat menyambungkan ke akun YouTube. Kembali ke AIMP dan coba lagi.
+YouTubeLang=id
+
+[YouTube.Messages]
+Error=Galat
+CantResolve=Tidak dapat memproses URL YouTube ini.
+EmptyUrl=Silakan masukkan URL YouTube yang valid.
+NoPlaylist=Gagal mengakses atau membuat daftar putar AIMP.
+ResolveError=Terjadi kesalahan saat memproses URL. Periksa koneksi internet atau kunci API.
+NoUserPlaylists=Tidak ada daftar putar ditemukan pada akun ini.
+
+[YouTube.Menu]
+AddURL=URL YouTube...
+OpenInBrowser=YouTube: Buka di Peramban Web
+AddToExclusions=YouTube: Tambahkan ke Pengecualian
+AddTo=Tambahkan ke
+RemoveFrom=Hapus dari
+CheckForNewItems=Periksa Video Baru
+
+[YouTube.AddURL]
+Title=Tambah URL YouTube
+URL=URL YouTube (Video, Playlist, Channel, atau @handle):
+CreateNew=Buat daftar putar baru untuk item ini
+OK=Tambah ke AIMP
+Cancel=Batal
+PlaylistName=Nama Daftar Putar (Opsional):
+MyPlaylists=Playlist Saya...
+StatusResolving=Memproses metadata YouTube...
+StatusFetchingPlaylist=Mengambil daftar trek playlist...
+StatusFetchingChannel=Mengambil daftar video channel...
+StatusFetchingVideo=Mengambil detail video...
+StatusFetchingMyPlaylists=Memuat playlist akun kamu...
+StatusSuccess=Berhasil menambahkan {0} trek!
+StatusSingleSuccess=Berhasil menambahkan video ke daftar putar!
+
+[YouTube.Options]
+Title=Dukungan YouTube
+AccountTitle=Akun Google / YouTube
+StatusNotConnected=Status: Belum Terhubung
+StatusWaitingAuth=Menunggu otentikasi di peramban...
+StatusAuthError=Gagal memulai otentikasi peramban.
+ConnectGoogle=Hubungkan Akun Google...
+Disconnect=Putuskan
+AdvancedApi=Pengaturan API Lanjutan (Client ID / API Key)...
+BrowserCookies=Impor Cookies YouTube dari Browser:
+ApiConfig=Konfigurasi YouTube API
+ApiKeyPrompt=Kunci YouTube API Kustom (Opsional - kosongkan untuk default):
+YtDlpTitle=Ekstraktor Stream yt-dlp & Cookies
+YtDlpPath=Lokasi berkas yt-dlp.exe:
+Browse=Telusuri...
+AudioParams=Parameter Format Audio (-f):
+DownloadYtDlp=Unduh yt-dlp
+UpdateYtDlp=Perbarui (-U)
+StatusReady=yt-dlp terpasang dan siap digunakan.
+StatusMissing=yt-dlp.exe belum ditemukan.
+StatusDownloading=Mengunduh yt-dlp.exe...
+StatusDownloadOk=yt-dlp berhasil diunduh!
+StatusDownloadFail=Gagal mengunduh yt-dlp.
+StatusUpdating=Memperbarui yt-dlp.exe...
+StatusUpdateDone=Pemeriksaan pembaruan selesai.
+StatusUpdateFail=Pembaruan gagal.
+General=Pengaturan Umum
+CheckAtStartup=Periksa URL yang dipantau saat AIMP dijalankan
+CreateNewByDefault=Buat daftar putar baru secara default saat menambah URL
+MonitorURLs=Pantau URL yang sudah ditambahkan
+MonitorUserPlaylists=Pantau playlist pengguna
+CheckEvery=Periksa trek terbaru setiap|jam
+YoutubeDLTimeout=Batas waktu pemrosesan|detik
+Save=Simpan
+
+[YouTube.Playlists]
+Favorites=Favorit
+Uploads=Diunggah
+Likes=Disukai
+WatchLater=Tonton Nanti
+
+[YouTube.Exclusions]
+Title=Pengecualian Trek
+Header=Kelola trek YouTube yang dikecualikan
+ListHeader=Judul Trek|Durasi
+Remove=Hapus dari pengecualian
+RemoveAndAddToPlaylist=Hapus dari pengecualian dan tambahkan ke daftar putar
+OK=Tutup

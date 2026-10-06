@@ -1,0 +1,95 @@
+name: Build & Release
+
+on:
+  push:
+    branches: [ "main", "master" ]
+    tags: [ "v*" ]
+  pull_request:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build & Package Plugin
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: |
+            8.0.x
+            9.0.x
+            10.0.x
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Add NuGet Source
+        run: dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org || true
+
+      - name: Restore Dependencies
+        run: dotnet restore AIMPYouTube.csproj
+
+      - name: Build Plugin (Release)
+        run: dotnet build AIMPYouTube.csproj -c Release --no-restore
+
+      - name: Prepare Plugin Distribution Package
+        id: package
+        shell: pwsh
+        run: |
+          $ReleaseDir = "bin/Release/net48"
+          $PackageDir = "dist/AIMPYouTube"
+          
+          New-Item -ItemType Directory -Path $PackageDir -Force | Out-Null
+          
+          # Native proxy loader entry point
+          Copy-Item "$ReleaseDir/aimp_dotnet.dll" -Destination "$PackageDir/AIMPYouTube.dll" -Force
+          
+          # Managed plugin assembly
+          Copy-Item "$ReleaseDir/AIMPYouTube.dll" -Destination "$PackageDir/AIMPYouTube_plugin.dll" -Force
+          
+          # SDK & Dependencies
+          Copy-Item "$ReleaseDir/AIMP.SDK.dll" -Destination "$PackageDir/AIMP.SDK.dll" -Force
+          Copy-Item "$ReleaseDir/Newtonsoft.Json.dll" -Destination "$PackageDir/Newtonsoft.Json.dll" -Force
+          
+          # PDB Debug Symbols (Optional)
+          if (Test-Path "$ReleaseDir/AIMPYouTube.pdb") {
+              Copy-Item "$ReleaseDir/AIMPYouTube.pdb" -Destination "$PackageDir/AIMPYouTube_plugin.pdb" -Force
+          }
+          
+          # Languages
+          if (Test-Path "Langs") {
+              New-Item -ItemType Directory -Path "$PackageDir/Langs" -Force | Out-Null
+              Copy-Item "Langs/*" -Destination "$PackageDir/Langs" -Force
+          }
+          
+          # Create Zip archive
+          $Tag = if ($env:GITHUB_REF -like "refs/tags/v*") { $env:GITHUB_REF.Substring(10) } else { "latest" }
+          $ZipName = "AIMPYouTube-$Tag.zip"
+          Compress-Archive -Path "dist/AIMPYouTube" -DestinationPath "dist/$ZipName" -Force
+          
+          Write-Output "ZIP_NAME=$ZipName" >> $env:GITHUB_ENV
+          Write-Output "ZIP_PATH=dist/$ZipName" >> $env:GITHUB_ENV
+
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.ZIP_NAME }}
+          path: ${{ env.ZIP_PATH }}
+
+      - name: Publish GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ${{ env.ZIP_PATH }}
+          draft: false
+          prerelease: false
+          generate_release_notes: true
+          name: Release ${{ github.ref_name }}

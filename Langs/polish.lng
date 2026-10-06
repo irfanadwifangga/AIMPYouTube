@@ -1,0 +1,57 @@
+﻿[FILE]
+Author=Eddy
+Name=Polish (PL)
+VersionID=0
+LangId=1045
+
+[YouTube]
+ConnectStatusOK=Autoryzacja pomyślna|Możesz teraz zamknąć to okno i wrócić do AIMPa.
+ConnectStatusError=Wystąpił błąd|Nie udało się połączyć z kontem YouTube. Wróć do AIMPa i spróbuj ponownie.
+YouTubeLang=pl
+
+[YouTube.Messages]
+Error=Błąd
+CantResolve=Nie udało się wczytać tego adresu.
+
+[YouTube.Menu]
+AddURL=YouTube URL
+OpenInBrowser=Otwórz w przeglądarce
+AddToExclusions=Dodaj do wyjątków
+AddTo=Dodaj do
+RemoveFrom=Usuń z
+CheckForNewItems=Sprawdź czy są nowe utwory
+
+[YouTube.AddURL]
+Title=Dodaj adres YouTube
+URL=Adres YouTube 
+CreateNew=Utwórz nową playlistę
+OK=OK
+PlaylistName=Nazwa playlisty (opcjonalnie)
+
+[YouTube.Options]
+Title=YouTube
+Account=Konto YouTube
+ConnectButton=Zaloguj się z Google|Wyloguj się
+General=Ogólne
+MonitorURLs=Monitoruj dodane adresy
+MonitorUserPlaylists=Monitoruj playlisty użytkownika
+CheckAtStartup=Sprawdzaj czy są nowe utwory przy starcie AIMPa
+CheckEvery=Sprawdzaj nowe utwory co|godzin
+YoutubeDLTimeout=Timeout|sekund
+YoutubeDLAlways=Zawsze używaj youtube-dl
+YoutubeDLUpdate=Aktualizuj
+YoutubeDLParameters=Parametry
+
+[YouTube.Playlists]
+Favorites=Ulubione
+Uploads=Przesłane
+Likes=Fajne filmy
+WatchLater=Obejrzyj później
+
+[YouTube.Exclusions]
+Title=Wykluczenia utworów
+Header=Zarządzaj wykluczeniami
+ListHeader=Nazwa utworu|Czas trwania
+Remove=Usuń z wykluczeń
+RemoveAndAddToPlaylist=Usuń z wykluczeń i dodaj do playlisty
+OK=OK
