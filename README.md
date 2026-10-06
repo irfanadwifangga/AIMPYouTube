@@ -62,7 +62,7 @@ powershell -ExecutionPolicy Bypass -File "deploy-and-test.ps1"
 
 1. **Add YouTube Track / Playlist:**
    - In AIMP, click the **`+`** (Add) button below the playlist.
-   - Select **`YouTube URL...`** (or `URL YouTube...` in Indonesian).
+   - Select **`YouTube URL...`** (or localized menu item in your language).
    - Paste any YouTube video, playlist, or channel URL.
    - Check _"Create new playlist for this item"_ if you want a dedicated playlist tab.
    - Click **`Add to AIMP`**.
@@ -185,20 +185,6 @@ AIMPYouTube/
 ├── LICENSE
 └── README.md
 ```
-
----
-
-## 🇮🇩 Panduan Bahasa Indonesia
-
-### Cara Pasang & Pakai:
-
-1. Unduh file `AIMPYouTube-vX.X.X.zip` dari halaman [Releases](../../releases).
-2. Ekstrak folder `AIMPYouTube` ke dalam folder plugins AIMP kamu:
-   - `C:\Users\<Username>\AppData\Roaming\AIMP\Plugins\AIMPYouTube` atau `C:\Program Files\AIMP\Plugins\AIMPYouTube`
-3. Buka AIMP, tekan `Ctrl + P` > menu **Plugins** > pastikan **YouTube Support** aktif.
-4. Klik tombol **`+`** di playlist AIMP > pilih **`URL YouTube...`**.
-5. Tempel URL YouTube (Video, Playlist, atau @Channel) dan klik **`Tambah ke AIMP`**.
-
 ---
 
 ## 🔧 Troubleshooting
