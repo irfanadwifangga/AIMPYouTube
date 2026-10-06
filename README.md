@@ -1,6 +1,6 @@
 # AIMP YouTube Support Plugin (C# .NET)
 
-[![Build & Release](https://github.com/USER/AIMPYouTube/actions/workflows/build-and-release.yml/badge.svg)](https://github.com/USER/AIMPYouTube/actions) [![Platform](https://img.shields.io/badge/platform-Windows%20x64-blue.svg)](https://www.aimp.ru) [![Framework](https://img.shields.io/badge/.NET%20Framework-4.8-purple.svg)](https://dotnet.microsoft.com/download/dotnet-framework/net48) [![AIMP](https://img.shields.io/badge/AIMP-v5.00%2B-orange.svg)](https://www.aimp.ru) [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Build & Release](https://github.com/irfanadwifangga/AIMPYouTube/actions/workflows/build-and-release.yml/badge.svg)](https://github.com/USER/AIMPYouTube/actions) [![Platform](https://img.shields.io/badge/platform-Windows%20x64-blue.svg)](https://www.aimp.ru) [![Framework](https://img.shields.io/badge/.NET%20Framework-4.8-purple.svg)](https://dotnet.microsoft.com/download/dotnet-framework/net48) [![AIMP](https://img.shields.io/badge/AIMP-v5.00%2B-orange.svg)](https://www.aimp.ru) [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 A modern plugin for the **[AIMP Media Player](https://www.aimp.ru)** that allows you to play audio directly from **YouTube** (Videos, Shorts, Playlists, Channels, and Handles) within your favorite desktop audio player.
 
