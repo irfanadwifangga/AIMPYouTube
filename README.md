@@ -202,7 +202,7 @@ AIMPYouTube/
 
 ## 🤝 Acknowledgements
 
-- Original C++ AIMPYouTube plugin by **[Eddy](https://github.com/Eddy87)**.
+- Original C++ AIMPYouTube plugin by **[Eddy](https://github.com/AdrianEddy)**.
 - .NET AIMP SDK Bridge by **[Martin211 / Evgeniy Bogdan](https://github.com/martin211/aimp_dotnet)**.
 - Stream resolution powered by **[yt-dlp](https://github.com/yt-dlp/yt-dlp)**.
 - Music player software by **[Artem Izmaylov (AIMP Development Team)](https://www.aimp.ru)**.
